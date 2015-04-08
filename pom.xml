@@ -56,28 +56,18 @@
             <version>2.1.0</version>			
 		</dependency>
 	</dependencies>
-    <distributionManagement>
-    <snapshotRepository>
-			<id>n52-snapshots</id>
-			<name>52n Snapshots</name>
-			<url>http://52north.org/maven/repo/snapshots/</url>
-    </snapshotRepository>
-    </distributionManagement>
-    
 	<repositories>
 		<repository>
 			<id>n52-releases</id>
 			<name>52n Releases</name>
-			<url>http://52north.org/maven/repo/releases</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
+			<url>http://52north.org/maven/repo/releases/</url>
+		</repository>
+		<repository>
+			<id>n52-snapshots</id>
+			<name>52n Snapshots</name>
+			<url>http://52north.org/maven/repo/snapshots/</url>
 		</repository>
 	</repositories>
-
 	<build>
 		<plugins>
 			<plugin>
